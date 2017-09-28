@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="262dp"
+            android:background="#000000"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/back_ground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/toolbar_back"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/bill"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="bottom"
+                    android:text="$ 14.2"
+                    android:textColor="#FFFFFF"
+                    android:textSize="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignEnd="@+id/back_ground" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+        <!-- android:src="@mipmap/ic_launcher_round"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:layout_height="524dp"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_height="@drawable/toolbar_back"
+                android:scaleType="centerInside"
+            -->
+    </android.support.design.widget.AppBarLayout>
+
+    <ListView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/mod_list"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:context="edu.mds.network.ui_test_170928_2.MainActivity"
+        tools:showIn="@layout/activity_main">
+    </ListView>
+
+</LinearLayout>

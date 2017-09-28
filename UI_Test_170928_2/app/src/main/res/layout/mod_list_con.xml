@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:orientation="horizontal">
+    <!--
+    android:layout_height="match_parent" -->
+    <ImageView
+        android:id="@+id/icon_module"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="false"
+        android:scaleType="fitCenter"/>
+        <!--
+        android:layout_height="wrap_content" -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/text_module"
+            android:text="Temp text"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp">
+
+            <ImageView
+                android:id="@+id/icon_type"
+                android:layout_margin="5dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="false"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/text_type"
+                android:text="Temp text"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
